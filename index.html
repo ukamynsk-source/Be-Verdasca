@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Verdasca Estética & Transformação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Transição suave para menu mobile */
+        .nav-links {
+            opacity: 0;
+            transform: translateY(-15px);
+            transition: all 0.3s ease;
+        }
+        .nav-links.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Be Verdasca</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Transforme sua Beleza & Bem-Estar</h1>
+            <p>Tratamentos exclusivos para você se sentir ainda mais confiante e relaxada.</p>
+            <a href="#agendamento" class="btn">Agende seu horário</a>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="Limpezadepele.jpg" alt="Limpeza de pele">
+                <h3>Limpeza de Pele</h3>
+                <p>Revitalize sua pele com técnicas avançadas de cuidados faciais.</p>
+            </div>
+            <div class="service-card">
+                <img src="massagemmodeladora.jpg" alt="Massagem modeladora">
+                <h3>Massagem Modeladora</h3>
+                <p>Relaxe e melhore sua circulação com técnicas exclusivas.</p>
+            </div>
+            <div class="service-card">
+                <img src="escleroterapia.jpg" alt="Escleroterapia">
+                <h3>Escleroterapia</h3>
+                <p>Tratamento eficaz para acabar com varizes de forma segura.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <p>O Be Verdasca Estética & Transformação é um espaço dedicado ao cuidado da sua beleza, saúde e bem-estar. Nossa missão é proporcionar experiências únicas em um ambiente acolhedor e profissional.</p>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos">
+        <h2>O que nossas clientes dizem</h2>
+        <div class="depoimentos-grid">
+            <div class="depoimento-card">
+                <p>“Experiência maravilhosa! Atendimento impecável e resultado incrível.”</p>
+                <h4>- Juliana M.</h4>
+            </div>
+            <div class="depoimento-card">
+                <p>“Me senti renovada após a massagem, recomendo muito!”</p>
+                <h4>- Fernanda R.</h4>
+            </div>
+            <div class="depoimento-card">
+                <p>“Ambiente super acolhedor e profissionais qualificados.”</p>
+                <h4>- Camila S.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento" class="agendamento">
+        <h2>Agende Seu Horário</h2>
+        <p>Escolha o serviço, data e horário para seu atendimento.</p>
+        <a href="https://calendly.com/biayamamoto09/30min?primary_color=ff9dde" class="btn" target="_blank">Agende Agora</a>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <h2>Entre em Contato</h2>
+        <div class="social-links">
+            <a href="https://wa.me/11942702170" class="btn-social whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://instagram.com/Bea_Yamamoto" class="btn-social instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Be Verdasca Estética & Transformação. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/11942702170" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Script do Menu Mobile -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
